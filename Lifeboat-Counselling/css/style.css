@@ -1,0 +1,110 @@
+/*------------------------------------------------------------------------------------------*/
+/* 1. Defaults & Reset of specific styles across browsers */
+/*------------------------------------------------------------------------------------------*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+}
+
+body {
+    margin: 0;
+    padding: 0 40px;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 25px;
+}
+
+.row img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    line-height: inherit;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+iframe {
+    border: 0 !important;
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column; 
+    background-color: blueviolet;
+} 
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.button-group{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.About{
+    background-color: aquamarine
+}
+
+.Services {
+    background-color: coral
+}
+
+.Contact {
+    background-color: grey
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 2.618em;
+    color: #292967;
+    padding-bottom: 32px; 
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #292967;
+    line-height: 30px;
+}
+
+.button:link,                 
+.button:visited {             
+  display: inline-block;             
+  text-decoration: none;      
+
+  color: #FFF;
+  background-color: #E94680;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),
+   0 1px 3px rgba(0,0,0,.08);
+
+  margin: 24px 0px;
+}
