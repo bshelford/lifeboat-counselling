@@ -16,7 +16,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, blockquote
 
 body {
     margin: 0;
-    padding: 0 40px;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -31,16 +31,21 @@ p {
 }
 
 a {
+    color: #292967;
     text-decoration: none;
     line-height: inherit;
-    -webkit-transition: opacity 0.3s ease-out;
-    -moz-transition: opacity 0.3s ease-out;
-    -o-transition: opacity 0.3s ease-out;
-    transition: opacity 0.3s ease-out;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    cursor: pointer;
 }
 
 iframe {
     border: 0 !important;
+}
+.wrap {
+    padding: 0 10%;
 }
 
 .Hero {
@@ -59,18 +64,65 @@ iframe {
 .button-group{
     display: flex;
     justify-content: flex-start;
+
 }
 
-.About{
-    background-color: aquamarine
+.hero-icon {
+    float: right;
+    margin: 10% 10%;
+    background-color: #E94680;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
 }
+
+.icon-box-container {
+    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 40px;
+    padding-bottom: 8px;
+}
+
+.icon-grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 32px;
+
+}
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b2b2b;
+    border-radius: 50px;
+    width: 54px;
+    height: 54px;
+}
+
+.services-text {
+    padding-top: 24px;
+}
+
+
+
 
 .Services {
-    background-color: coral
+    background-color: #B8E3DE;
+    padding-top: 24px;
+    
 }
 
 .Contact {
-    background-color: grey
+    background-color: #B8E3DE;
+    padding: 72px 0;
 }
 
 h1 {
@@ -81,8 +133,40 @@ h1 {
     padding-bottom: 32px; 
 }
 
+h2 { 
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 1.618em	;
+    color: #292967; 
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #2b2b2b;
+    line-height: 30px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.618em;
+    font-weight: 700;
+    color: #2b2b2b;
+    line-height: 30px;
+    padding: 8px 0;
+}
+
+h5 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 5vw	;
+    color: #292967; 
+}
+
 p {
     font-family: 'Poppins', sans-serif;
+    font-size: 1em;
     font-weight: 300;
     color: #292967;
     line-height: 30px;
@@ -105,6 +189,74 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(50,50,93,.11),
    0 1px 3px rgba(0,0,0,.08);
-
   margin: 24px 0px;
+  transition: all 0.15s ease;
+}
+
+.button:focus,
+.button:hover {
+    background-color: #FF5C96;
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    transform: translateY(-1px)
+}
+
+a:hover {
+    color: rgba(41, 41, 103, 0.5);
+}
+
+.jt-image {
+    background-image: url(/Users/Ben.Shelford/Desktop/Lifeboat-Counselling/assets/images/test_image.jpg);
+    width:100%;
+    height:200px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin: 0 0 32px 0;
+}
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1100px) {
+    .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .hero-text {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .hero-text p {
+        font-size: 1.618em;
+        line-height: 42px;
+        width: 44%;
+        max-width: 380px;
+    
+    }
+    .hero-text h1 {
+        font-size: 4.236em;
+        margin-top: -350px;
+        width: 44%;
+        max-width: 380px;
+        
+    }
+    .button-group {
+        
+    }
+
+    .hero-icon {
+        height: 200px;
+        width: 200px;
+        border-radius: 300px; 
+        float: left;
+        margin: 80px 0 205px 0;
+    }
+
+    .About { 
+        padding-top: 72px;
+    }
 }
